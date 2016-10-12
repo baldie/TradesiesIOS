@@ -4,27 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Tradesies.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<false/>
+		</dict>
+		<key>Pods-Tradesies.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B8C59EB1DA9872B0093A158</key>
+		<key>72B37B06D20A8B84581EA4336D76C8EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B8C59FF1DA9872C0093A158</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2B8C5A0A1DA9872C0093A158</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

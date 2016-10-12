@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2B8C59F01DA9872C0093A158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C59EF1DA9872C0093A158 /* AppDelegate.swift */; };
-		2B8C59F21DA9872C0093A158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C59F11DA9872C0093A158 /* ViewController.swift */; };
+		2B8C59F21DA9872C0093A158 /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C59F11DA9872C0093A158 /* MarketplaceViewController.swift */; };
 		2B8C59F51DA9872C0093A158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C59F31DA9872C0093A158 /* Main.storyboard */; };
 		2B8C59F71DA9872C0093A158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C59F61DA9872C0093A158 /* Assets.xcassets */; };
 		2B8C59FA1DA9872C0093A158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C59F81DA9872C0093A158 /* LaunchScreen.storyboard */; };
 		2B8C5A051DA9872C0093A158 /* TradesiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C5A041DA9872C0093A158 /* TradesiesTests.swift */; };
 		2B8C5A101DA9872C0093A158 /* TradesiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C5A0F1DA9872C0093A158 /* TradesiesUITests.swift */; };
+		2BDAF7C51DAAD47800FBC510 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2BDAF7C41DAAD47800FBC510 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		2B8C59EC1DA9872C0093A158 /* Tradesies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradesies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8C59EF1DA9872C0093A158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B8C59F11DA9872C0093A158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B8C59F11DA9872C0093A158 /* MarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
 		2B8C59F41DA9872C0093A158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B8C59F61DA9872C0093A158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8C59F91DA9872C0093A158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		2B8C5A0B1DA9872C0093A158 /* TradesiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradesiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8C5A0F1DA9872C0093A158 /* TradesiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradesiesUITests.swift; sourceTree = "<group>"; };
 		2B8C5A111DA9872C0093A158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDAF7C41DAAD47800FBC510 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		426F7B78726A7DCCF284C9BF /* Pods-Tradesies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradesies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tradesies/Pods-Tradesies.debug.xcconfig"; sourceTree = "<group>"; };
+		79740EA958A6F4D355CB8941 /* Pods-Tradesies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradesies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tradesies/Pods-Tradesies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B9CF6333AFA9B9B4AFA3A46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BDAF7C41DAAD47800FBC510 /* Podfile */,
+				426F7B78726A7DCCF284C9BF /* Pods-Tradesies.debug.xcconfig */,
+				79740EA958A6F4D355CB8941 /* Pods-Tradesies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2B8C59E31DA9872B0093A158 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,7 @@
 				2B8C5A031DA9872C0093A158 /* TradesiesTests */,
 				2B8C5A0E1DA9872C0093A158 /* TradesiesUITests */,
 				2B8C59ED1DA9872C0093A158 /* Products */,
+				1B9CF6333AFA9B9B4AFA3A46 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +112,11 @@
 		2B8C59EE1DA9872C0093A158 /* Tradesies */ = {
 			isa = PBXGroup;
 			children = (
-				2B8C59EF1DA9872C0093A158 /* AppDelegate.swift */,
-				2B8C59F11DA9872C0093A158 /* ViewController.swift */,
-				2B8C59F31DA9872C0093A158 /* Main.storyboard */,
+				2BDAF7C81DAAD5CE00FBC510 /* Views */,
+				2BDAF7C71DAAD5C200FBC510 /* Models */,
+				2BDAF7C61DAAD5B200FBC510 /* Controllers */,
 				2B8C59F61DA9872C0093A158 /* Assets.xcassets */,
-				2B8C59F81DA9872C0093A158 /* LaunchScreen.storyboard */,
+				2B8C59EF1DA9872C0093A158 /* AppDelegate.swift */,
 				2B8C59FB1DA9872C0093A158 /* Info.plist */,
 			);
 			path = Tradesies;
@@ -125,6 +140,30 @@
 			path = TradesiesUITests;
 			sourceTree = "<group>";
 		};
+		2BDAF7C61DAAD5B200FBC510 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B8C59F11DA9872C0093A158 /* MarketplaceViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2BDAF7C71DAAD5C200FBC510 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2BDAF7C81DAAD5CE00FBC510 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B8C59F31DA9872C0093A158 /* Main.storyboard */,
+				2B8C59F81DA9872C0093A158 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8C5A141DA9872C0093A158 /* Build configuration list for PBXNativeTarget "Tradesies" */;
 			buildPhases = (
+				9CEF6195A59B4231025B949F /* [CP] Check Pods Manifest.lock */,
 				2B8C59E81DA9872B0093A158 /* Sources */,
 				2B8C59E91DA9872B0093A158 /* Frameworks */,
 				2B8C59EA1DA9872B0093A158 /* Resources */,
+				67C181599FD6C332ECBB600F /* [CP] Embed Pods Frameworks */,
+				016B51699550132AF032066A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +235,7 @@
 				TargetAttributes = {
 					2B8C59EB1DA9872B0093A158 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B2Z45R38JE;
 						ProvisioningStyle = Automatic;
 					};
 					2B8C59FF1DA9872C0093A158 = {
@@ -234,6 +277,7 @@
 			files = (
 				2B8C59FA1DA9872C0093A158 /* LaunchScreen.storyboard in Resources */,
 				2B8C59F71DA9872C0093A158 /* Assets.xcassets in Resources */,
+				2BDAF7C51DAAD47800FBC510 /* Podfile in Resources */,
 				2B8C59F51DA9872C0093A158 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +298,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		016B51699550132AF032066A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tradesies/Pods-Tradesies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67C181599FD6C332ECBB600F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tradesies/Pods-Tradesies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CEF6195A59B4231025B949F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B8C59E81DA9872B0093A158 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8C59F21DA9872C0093A158 /* ViewController.swift in Sources */,
+				2B8C59F21DA9872C0093A158 /* MarketplaceViewController.swift in Sources */,
 				2B8C59F01DA9872C0093A158 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,25 +502,31 @@
 		};
 		2B8C5A151DA9872C0093A158 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 426F7B78726A7DCCF284C9BF /* Pods-Tradesies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B2Z45R38JE;
 				INFOPLIST_FILE = Tradesies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobile.Tradesies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetradesiesapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2B8C5A161DA9872C0093A158 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79740EA958A6F4D355CB8941 /* Pods-Tradesies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B2Z45R38JE;
 				INFOPLIST_FILE = Tradesies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobile.Tradesies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thetradesiesapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -505,6 +603,7 @@
 				2B8C5A161DA9872C0093A158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B8C5A171DA9872C0093A158 /* Build configuration list for PBXNativeTarget "TradesiesTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +612,7 @@
 				2B8C5A191DA9872C0093A158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B8C5A1A1DA9872C0093A158 /* Build configuration list for PBXNativeTarget "TradesiesUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +621,7 @@
 				2B8C5A1C1DA9872C0093A158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
