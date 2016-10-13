@@ -10,8 +10,6 @@ import UIKit
 
 class MarketplaceViewController: UIViewController {
     
-    let API_KEY = "bf3ae48b-d884-4925-a412-78c0377f4ae1"
-    
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
@@ -48,11 +46,17 @@ class MarketplaceViewController: UIViewController {
         
     
         let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
-            print("Response: \(response)")
-            let strData = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            print("Body: \(strData)")
             
-            self.label.text = strData as String?
+            let jsonResponse = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            
+            print("Response: \(response)")
+            print("Body: \(jsonResponse)")
+            
+            self.label.text = jsonResponse as String?
+            
+            let response = GetItemsResponse(JSONString: (jsonResponse as String?)!)
+            
+            print("object: \(response.Items)")
             //var json = JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as? NSDictionary
             
             // Did the JSONObjectWithData constructor return an error? If so, log the error to the console
@@ -60,26 +64,5 @@ class MarketplaceViewController: UIViewController {
         })
         
         task.resume()
-    }
-}
-
-class GetItemsRequest {
-    var UserId: String = "102"
-    var Limit: Int = 10
-    var Radius: Int = 15
-    var Latitude: String = "40.77477477"
-    var Longitude: String = "-73.97240294"
-    var Offset: Int = 0
-    var SearchTerms: [String] = []
-    
-    func toString() -> String {
-        return "{" +
-        "\"UserId\": \"0\"," +
-        "\"Limit\": 12," +
-        "\"Radius\": 15," +
-        "\"Latitude\": \"40.77477477\"," +
-        "\"Longitude\": \"-73.97240294\"," +
-        "\"Offset\": 12" +
-        "}"
     }
 }

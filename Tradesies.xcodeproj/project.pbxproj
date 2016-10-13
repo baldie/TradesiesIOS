@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B00701B1DB0126100D9276B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00701A1DB0126100D9276B /* Config.swift */; };
+		2B00701D1DB016A400D9276B /* GetItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00701C1DB016A400D9276B /* GetItemsResponse.swift */; };
+		2B00701F1DB0176F00D9276B /* GetItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00701E1DB0176F00D9276B /* GetItemsRequest.swift */; };
+		2B0070211DB018CC00D9276B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0070201DB018CC00D9276B /* Item.swift */; };
+		2B0070231DB0199400D9276B /* ItemPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0070221DB0199400D9276B /* ItemPhoto.swift */; };
 		2B8C59F01DA9872C0093A158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C59EF1DA9872C0093A158 /* AppDelegate.swift */; };
 		2B8C59F21DA9872C0093A158 /* MarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C59F11DA9872C0093A158 /* MarketplaceViewController.swift */; };
 		2B8C59F51DA9872C0093A158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C59F31DA9872C0093A158 /* Main.storyboard */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B00701A1DB0126100D9276B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2B00701C1DB016A400D9276B /* GetItemsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetItemsResponse.swift; sourceTree = "<group>"; };
+		2B00701E1DB0176F00D9276B /* GetItemsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetItemsRequest.swift; sourceTree = "<group>"; };
+		2B0070201DB018CC00D9276B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2B0070221DB0199400D9276B /* ItemPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPhoto.swift; sourceTree = "<group>"; };
 		2B8C59EC1DA9872C0093A158 /* Tradesies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradesies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8C59EF1DA9872C0093A158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8C59F11DA9872C0093A158 /* MarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +128,7 @@
 				2B8C59F61DA9872C0093A158 /* Assets.xcassets */,
 				2B8C59EF1DA9872C0093A158 /* AppDelegate.swift */,
 				2B8C59FB1DA9872C0093A158 /* Info.plist */,
+				2B00701A1DB0126100D9276B /* Config.swift */,
 			);
 			path = Tradesies;
 			sourceTree = "<group>";
@@ -151,6 +162,10 @@
 		2BDAF7C71DAAD5C200FBC510 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2B00701C1DB016A400D9276B /* GetItemsResponse.swift */,
+				2B00701E1DB0176F00D9276B /* GetItemsRequest.swift */,
+				2B0070201DB018CC00D9276B /* Item.swift */,
+				2B0070221DB0199400D9276B /* ItemPhoto.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -352,7 +367,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B8C59F21DA9872C0093A158 /* MarketplaceViewController.swift in Sources */,
+				2B00701F1DB0176F00D9276B /* GetItemsRequest.swift in Sources */,
 				2B8C59F01DA9872C0093A158 /* AppDelegate.swift in Sources */,
+				2B00701D1DB016A400D9276B /* GetItemsResponse.swift in Sources */,
+				2B0070211DB018CC00D9276B /* Item.swift in Sources */,
+				2B0070231DB0199400D9276B /* ItemPhoto.swift in Sources */,
+				2B00701B1DB0126100D9276B /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
