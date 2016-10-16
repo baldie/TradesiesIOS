@@ -44,23 +44,17 @@ class MarketplaceViewController: UIViewController {
         request.httpMethod = "POST"
         print("%@", request.allHTTPHeaderFields)
         
-    
+        // Fire the request
         let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
             
             let jsonResponse = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             
             print("Response: \(response)")
             print("Body: \(jsonResponse)")
-            
-            self.label.text = jsonResponse as String?
-            
+        
             let response = GetItemsResponse(JSONString: (jsonResponse as String?)!)
             
-            print("object: \(response.Items)")
-            //var json = JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as? NSDictionary
-            
-            // Did the JSONObjectWithData constructor return an error? If so, log the error to the console
-            //print(err.localizedDescription)
+            self.label.text = "Items returned: \(response.Items.count)"
         })
         
         task.resume()

@@ -22,7 +22,47 @@ class Item: NSObject {
     var Distance: String = ""
     var Photos: [ItemPhoto] = []
     
-    override init(){
+    init(jsonDictionary: NSDictionary){
+        super.init()
         
+        for (key, value) in jsonDictionary {
+            let keyName = key as! String
+            switch(keyName){
+                case "Photos":
+                    let photosArray = ItemPhoto.deserializeArray(itemPhotosArray: value as! NSArray)
+                    self.setValue(photosArray, forKey: keyName)
+                    break
+                    
+                case "Id", "OwnerUserId":
+                    let intValue = value as! Int
+                    self.setValue(intValue, forKey: keyName)
+                    
+                case "Favored", "IsActive":
+                    let boolValue = value as! Bool
+                    self.setValue(boolValue, forKey: keyName)
+                    
+                case "Categories":
+                    //todo: this
+                    break
+                    
+                default:
+                    if (value is String) {
+                        let stringValue = value as! String
+                        self.setValue(stringValue, forKey: keyName)
+                    }
+            }
+        }
+    }
+    
+    // This function returns an array of Items based off of the serialized data passed in
+    static func deserializeArray(itemsArray: NSArray) -> [Item]{
+        var items = [Item]()
+        
+        for itemEntry in itemsArray {
+            let item = Item(jsonDictionary: itemEntry as! NSDictionary)
+            items.append(item)
+        }
+        
+        return items
     }
 }

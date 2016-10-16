@@ -1,16 +1,14 @@
 //
-//  GetItemResponse.swift
+//  JSONDataContract.swift
 //  Tradesies
 //
-//  Created by David Baldie on 10/13/16.
+//  Created by David Baldie on 10/14/16.
 //  Copyright © 2016 Tradesies Inc. All rights reserved.
 //
 
 import Foundation
 
-class GetItemsResponse: NSObject {
-    var Items: [Item] = []
-    var Error: String = ""
+class JSONDataContract: NSObject {
     
     // Deserialize JSON to populate this object
     init(JSONString: String) {
@@ -21,23 +19,28 @@ class GetItemsResponse: NSObject {
         do {
             let JSONDictionary = try JSONSerialization.jsonObject(with: JSONData!, options: .mutableLeaves) as! NSDictionary
             
-            // Loop through key value pairs in the dictionary
+            // Loop
             for (key, value) in JSONDictionary {
                 let keyName = key as! String
                 
-                // Only 2 properties on this type
-                switch(keyName){
-                    case "Items":
-                        self.setValue(Item.deserializeArray(itemsArray: value as! NSArray), forKey: keyName)
-                    
-                    default:
-                        if (value is String) {
-                            self.setValue(value as! String, forKey: keyName)
-                        }
+                var keyValue: String = ""
+                if value is String {
+                    keyValue = value as! String
+                }
+                if value is NSDictionary {
+                    print("topek")
+                }
+                
+                // If property exists
+                if (self.responds(to: Selector("\(keyName)"))) {
+                    self.setValue(keyValue, forKey: keyName)
                 }
             }
         } catch let error as NSError {
             print(error.localizedDescription)
         }
+        // Or you can do it with using
+        // self.setValuesForKeysWithDictionary(JSONDictionary)
+        // instead of loop method above
     }
 }
